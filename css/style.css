@@ -25,7 +25,6 @@ body {
  text-align: center;
  font-family: SEGOE SCRIPT;
  padding-top: 50px;
-
 }
 
 .img_intro {
@@ -65,4 +64,10 @@ body {
 
 .text_pict{
   margin-bottom: 50px;
+}
+
+.li_recipe{
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin-left: -35px;
 }
