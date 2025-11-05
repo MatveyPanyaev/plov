@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О плове</a></li>
+          <li><a href="ingredients.html">Ингредиенты</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="passport.html" class="active">Паспорт</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Плов" target="_blank">Википедия</a></li>
+        </ul>
+      </nav>
+    <nav>
+        <ul>
+            <li><a href="index.html"><b>Главная</b></a></li>
+            <li><a href="passport.html">Паспорт</a></li>
+            <li><a href="rename.html">Изменяем кириллицу на латиницу</a></li>
+            <li><a href="task.html">Решение задачи</a></li>
+            <li><a href="index.html">Плов</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h1>Задача: Можно ли выпилить брус из бревна?</h1>
+    <p name='formulation'>
+        Можно ли из бревна, имеющего диаметр поперечного сечения D, выпилить квадратный брус шириной A?
+    </p>
+
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <ul>
+            <li>
+                Для поисковика:
+                <input name="q" value="search">
+            </li>
+            <li>
+                Формулировка задачи:
+                <br>
+                <textarea cols="60" rows="4" id="task" name="formulation">
+                </textarea>
+            </li>
+            <li>
+                Диаметр бревна D:
+                <input id="d" name="d" type="number" value="">
+            </li>
+            <li>
+                Ширина бруса A:
+                <input id="a" name="a" type="number" value="">
+            </li>
+            <li>
+                Результат решения задачи:
+                <input id="result" name="result" value="">
+            </li>
+            <li>
+                Действие 1:
+                <input id="verify" type="button" value="Проверить">
+            </li>
+            <li>
+                Действие 2:
+                <input id="send" type="submit" value="Отправить">
+            </li>
+        </ul>
+    </form>
+    <script src="task.js"></script>
+</body>
+
+</html>
