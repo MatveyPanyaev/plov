@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Контакты и заказы</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="main-nav">
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О плове</a></li>
+    <li><a href="ingredients.html">Ингредиенты</a></li>
+    <li><a href="gallery.html">Галерея</a></li>
+    <li><a href="contacts.html" class="active">Контакты</a></li>
+    <li><a href="passport.html">Паспорт</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/Плов" target="_blank">Википедия</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>Контакты и заказы</h1>
+
+  <div class="form-section">
+    <h2>Контактные данные</h2>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+      <input type="hidden" name="form_type" value="contact_form">
+      
+      <b>Фамилия:</b>
+      <input type="text" name="last_name" required><br><br>
+      
+      <b>Имя:</b>
+      <input type="text" name="first_name" required><br><br>
+      
+      <b>Отчество:</b>
+      <input type="text" name="otch" required><br><br>
+      
+      <b>Мобильный телефон:</b>
+      <input type="text" name="phone" required><br><br>
+      
+      <b>Электронная почта:</b>
+      <input type="text" name="email" required><br><br>
+      
+      <b>Дата отправки:</b>
+      <input type="date" name="send_date" required><br><br>
+      
+      <input type="submit" value="Отправить контакты">
+    </form>
+  </div>
+
+  <div class="form-section">
+    <h2>Заказ плова</h2>
+    <form action="https://www.bing.com/search?" method="post" target="_blank">
+      <input type="hidden" name="form_type" value="order_form">
+      
+      <b>Тип плова:</b>
+      <input type="Radio" name="plov_type" value="uzbek" checked> Узбекский
+      <input type="Radio" name="plov_type" value="azeri"> Азербайджанский
+      <input type="Radio" name="plov_type" value="vegetarian"> Вегетарианский<br><br>
+      
+      <b>Количество порций:</b>
+      <input type="number" name="portions" min="1" max="20" value="5"><br><br>
+      
+      <b>Дополнительные ингредиенты:</b>
+      <select name="плов">
+        <OPTION value="<Баранина>">Баранина</OPTION>
+        <OPTION value="Курица>">Курица</OPTION>
+        <OPTION value="Ничего>">Ничего</OPTION>
+    </select><br><br>
+      
+      <b>Дата доставки:</b>
+      <input type="date" name="delivery_date"><br><br>
+      
+      <b>Комментарий:</b><br>
+      <textarea name="comment" rows="4" cols="50"></textarea><br><br>
+      
+      <label>Уровень остроты (1-10):</label>
+      <input type="number" name="spice_level" min="1" max="10" value="3"><br><br>
+      
+      <input type="hidden" name="secret_code" value="PLOV2024">
+      
+      <input type="submit" value="Заказать плов">
+    </form>
+  </div>
+</div>
+</body>
+</html>
