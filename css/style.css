@@ -1,0 +1,132 @@
+/* Основные стили */
+body {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url(../images/background-2.png);
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  width: 100%;
+  margin: 0px auto;
+  border: 5px groove orange;
+  background-color: white;
+}
+
+/* Навигация */
+.main-nav {
+  background-color: #8B4513;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #A0522D;
+  text-decoration: underline;
+}
+
+/* Секция формы */
+.form-section {
+  border: 2px solid #8B4513;
+  background-color: #FFF8DC;
+}
+
+/* Кнопки */
+.btn-brown {
+  background-color: #8B4513;
+  color: white;
+  border: none;
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+  background-color: transparent;
+}
+
+.bg-brown {
+  background-color: #8B4513 !important;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .content {
+    border: 3px groove orange;
+    padding: 15px !important;
+  }
+  
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Сохранение ваших оригинальных классов для обратной совместимости */
+.text_title_big {
+  font-family: 'SEGOE SCRIPT', cursive;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.text_title_1_5_em {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.5em;
+}
+
+.text_oblique {
+  font-style: oblique;
+}
+
+/* Стили для шагов рецепта */
+.recipe-step {
+  background-color: #f8f9fa;
+}
+
+.text-brown {
+  color: #8B4513;
+  font-weight: bold;
+}
+
+/* Стили для галереи */
+.gallery-table {
+  background-color: #f5f5f5;
+}
+
+.gallery-cell {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.gallery-img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #8B4513;
+  border-radius: 8px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .gallery-img {
+    width: 150px;
+    height: 120px;
+  }
+  
+  .recipe-step {
+    padding: 15px !important;
+  }
+  
+  .recipe-step .col-md-4 {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты и заказы</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark main-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#">Плов на костре</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Галерея</a></li>
+        <li class="nav-item"><a href="contacts.html" class="nav-link active">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="content p-4">
+    <div class="form-section p-4 rounded">
+      <h2 class="text-center mb-4">Заказ плова</h2>
+      <form action="https://www.bing.com/search?" method="GET" target="_blank">
+        <input type="hidden" name="q" value="search">
+        
+        <div class="mb-3">
+          <label class="form-label fw-bold">Тип плова:</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="plov_type" value="uzbek" id="uzbek" checked>
+              <label class="form-check-label" for="uzbek">Узбекский</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="plov_type" value="azeri" id="azeri">
+              <label class="form-check-label" for="azeri">Азербайджанский</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="plov_type" value="vegetarian" id="vegetarian">
+              <label class="form-check-label" for="vegetarian">Вегетарианский</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-3">
+          <label for="portions" class="form-label fw-bold">Количество порций:</label>
+          <input type="number" class="form-control" id="portions" name="portions" min="1" max="20" value="5">
+        </div>
+        
+        <div class="mb-3">
+          <label for="ingredients" class="form-label fw-bold">Дополнительные ингредиенты:</label>
+          <select class="form-select" id="ingredients" name="плов">
+            <option value="Баранина">Баранина</option>
+            <option value="Курица">Курица</option>
+            <option value="Ничего">Ничего</option>
+          </select>
+        </div>
+        
+        <div class="mb-3">
+          <label for="delivery_date" class="form-label fw-bold">Дата доставки:</label>
+          <input type="date" class="form-control" id="delivery_date" name="delivery_date">
+        </div>
+        
+        <div class="mb-3">
+          <label for="comment" class="form-label fw-bold">Комментарий:</label>
+          <textarea class="form-control" id="comment" name="comment" rows="4">Добавьте ваши пожелания по заказу</textarea>
+        </div>
+        
+        <div class="mb-4">
+          <label for="spice_level" class="form-label fw-bold">Уровень остроты (1-10):</label>
+          <input type="number" class="form-control" id="spice_level" name="spice_level" min="1" max="10" value="3">
+        </div>
+        
+        <input type="hidden" name="secret_code" value="PLOV2024">
+        
+        <div class="text-center">
+          <button type="submit" class="btn btn-brown btn-lg">Заказать плов</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
